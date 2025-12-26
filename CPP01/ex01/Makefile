@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: vimazuro <vimazuro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/09/14 12:18:51 by vimazuro          #+#    #+#              #
-#    Updated: 2025/09/14 12:23:29 by vimazuro         ###   ########.fr        #
+#    Created: 2025/12/23 15:09:10 by vimazuro          #+#    #+#              #
+#    Updated: 2025/12/23 17:18:15 by vimazuro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombieHorde
+NAME = horde_of_Zombies
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-g -fsanitize=address
 
@@ -20,16 +20,16 @@ OBJS = $(SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+		$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 %.o: %.cpp Makefile
-	$(CC) $(CFLAGS) -c $< -o $@
+		$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+		rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+		rm -f $(NAME)
 
 re: fclean all
 
