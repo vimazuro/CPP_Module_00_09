@@ -6,7 +6,7 @@
 /*   By: vimazuro <vimazuro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/26 15:03:31 by vimazuro          #+#    #+#             */
-/*   Updated: 2025/12/26 16:42:40 by vimazuro         ###   ########.fr       */
+/*   Updated: 2025/12/29 18:23:56 by vimazuro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Weapon
     private:
             std::string _type;
     public:
-            Weapon(std::string type = "");
+            Weapon(std::string type);
             ~Weapon();
 
             std::string&    getType();
